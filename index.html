@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imunologia Interativa</title>
+    <!-- Folha de estilos principal -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Ícones Font Awesome para elementos interativos -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-xh6Y7pWQicHoThMHDLW1Yp9+u4MRB50p/KjzZeuIQTURsD280O7NChP6cKumzEaKcX1KqYzlXfM1PeKPk3jP4Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <!-- Aviso educacional -->
+    <div class="aviso">
+      Esta plataforma é um recurso de simulação educacional. Nenhuma
+      informação aqui apresentada substitui consulta, diagnóstico ou tratamento
+      médico. Sempre procure orientação profissional para decisões clínicas.
+    </div>
+
+    <div class="container">
+      <!-- Menu lateral com links para cada módulo e sub‑tópico -->
+      <nav class="sidebar">
+        <h1>Imunologia Interativa</h1>
+        <ul>
+          <li><a href="#modulo1">Módulo 1 – Fundamentos 🧬</a>
+            <ul>
+              <li><a href="#mod1_org">Órgãos e Células</a></li>
+              <li><a href="#mod1_mol">Moléculas de Reconhecimento</a></li>
+              <li><a href="#mod1_ag_ac">Antígenos e Anticorpos</a></li>
+            </ul>
+          </li>
+          <li><a href="#modulo2">Módulo 2 – Imunidade Inata 🛡️</a>
+            <ul>
+              <li><a href="#mod2_bar">Barreiras Físicas e Químicas</a></li>
+              <li><a href="#mod2_comp">Sistema Complemento</a></li>
+              <li><a href="#mod2_fag">Fagócitos e Inflamação</a></li>
+              <li><a href="#mod2_dc_nk">Células Dendríticas e NK</a></li>
+            </ul>
+          </li>
+          <li><a href="#modulo3">Módulo 3 – Imunidade Adaptativa 🎯</a>
+            <ul>
+              <li><a href="#mod3_mhc">Apresentação de Antígenos / MHC</a></li>
+              <li><a href="#mod3_t">Linfócitos T</a></li>
+              <li><a href="#mod3_b">Linfócitos B</a></li>
+              <li><a href="#mod3_tol">Tolerância Imunológica</a></li>
+            </ul>
+          </li>
+          <li><a href="#modulo4">Módulo 4 – Imunologia Clínica ⚕️</a>
+            <ul>
+              <li><a href="#mod4_inf">Imunologia das Infecções</a></li>
+              <li><a href="#mod4_hip">Hipersensibilidades</a></li>
+              <li><a href="#mod4_auto">Autoimunidade</a></li>
+              <li><a href="#mod4_def">Imunodeficiências</a></li>
+              <li><a href="#mod4_trans">Transplantes &amp; Tumores</a></li>
+              <li><a href="#mod4_vac">Vacinação</a></li>
+            </ul>
+          </li>
+          <li><a href="referencias.html">Referências</a></li>
+        </ul>
+      </nav>
+
+      <!-- Área de conteúdo principal -->
+      <main class="content">
+        <!-- MÓDULO 1 -->
+        <section id="modulo1" class="modulo">
+          <h2>Módulo 1 – Fundamentos da Imunologia 🧬</h2>
+
+          <!-- Órgãos e células -->
+          <article id="mod1_org">
+            <h3>Órgãos e Células do Sistema Imune</h3>
+            <p>
+              O sistema imune humano é composto por órgãos linfoides e um
+              repertório diversificado de células. Órgãos linfoides primários
+              incluem a <strong>medula óssea</strong>, onde todas as células
+              sanguíneas se originam, e o <strong>timo</strong>, responsável
+              pela maturação dos linfócitos T. Órgãos linfoides secundários
+              englobam <em>linfonodos</em>, o <em>baço</em>, as
+              <em>amígdalas</em> e a <em>mucosa associada ao tecido linfoide</em>
+              (MALT), que promovem encontros entre antígenos e linfócitos maduros
+              para iniciar respostas imunológicas adaptativas【932704689189318†L310-L329】.
+            </p>
+            <p>
+              Entre as células do sistema imune, destacam‑se os
+              <strong>leucócitos</strong>. Na imunidade inata, os fagócitos como
+              <em>neutrófilos</em> e <em>macrófagos</em> patrulham o sangue e os
+              tecidos, reconhecendo e eliminando agentes invasores por
+              fagocitose【932704689189318†L462-L489】. Os
+              <em>mastócitos</em>, <em>basófilos</em> e <em>eosinófilos</em>
+              liberam mediadores químicos e participam de reações alérgicas e
+              resposta a parasitas【932704689189318†L499-L505】. As
+              <strong>células dendríticas</strong> atuam como vigias nas
+              superfícies de contato (pele e mucosas), capturam antígenos e os
+              apresentam a linfócitos T, conectando imunidades inata e
+              adaptativa【932704689189318†L491-L499】. Os
+              <strong>linfócitos NK</strong> reconhecem células infectadas ou
+              tumorais que expressam baixos níveis de MHC I e eliminam essas
+              células por indução de apoptose【932704689189318†L514-L523】.
+            </p>
+            <!-- Imagem de sangue e legenda -->
+            <figure class="image">
+              <img src="imagem1.jpg" alt="Micrografia eletrônica de células sanguíneas" />
+              <figcaption>
+                Micrografia eletrônica de varredura de sangue humano normal.
+                Observam‑se hemácias em forma de disco, leucócitos como linfócitos,
+                monócitos e neutrófilos, além de plaquetas discóides【932704689189318†L451-L461】.
+              </figcaption>
+            </figure>
+
+            <!-- Flashcards -->
+            <div class="flashcards" data-topic="mod1_org"></div>
+          </article>
+
+          <!-- Moléculas de Reconhecimento e Comunicação -->
+          <article id="mod1_mol">
+            <h3>Moléculas de Reconhecimento e Comunicação</h3>
+            <p>
+              Para detectar microrganismos, as células imunes expressam
+              <strong>receptores de reconhecimento de padrões</strong>, como os
+              receptores do tipo Toll (TLRs), que se ligam a componentes
+              conservados de patógenos, desencadeando a produção de citocinas e
+              a ativação de programas de defesa【932704689189318†L430-L444】. No
+              citosol, receptores como os NOD‑like e RIG‑like detectam
+              produtos bacterianos ou RNA viral【932704689189318†L442-L445】.
+            </p>
+            <p>
+              As <strong>citocinas</strong> são proteínas secretadas por células
+              imunes e teciduais que modulam a atividade de outras células; por
+              exemplo, interleucinas coordenam a comunicação entre leucócitos e
+              interferons possuem efeitos antivirais, como bloquear a síntese
+              proteica nas células infectadas【932704689189318†L1010-L1016】. As
+              <strong>quimiocinas</strong> são citocinas especializadas em atrair
+              células para o foco de infecção (quimiotaxia)【932704689189318†L1010-L1016】. O
+              <strong>sistema complemento</strong>, composto por mais de 20
+              proteínas séricas, complementa a ação de anticorpos, ativando uma
+              cascata proteolítica que opsoniza e lisa microrganismos【932704689189318†L554-L573】.
+            </p>
+            <p>
+              Receptores de linfócitos incluem os <em>receptores de célula
+              B</em> (BCR), que são essencialmente anticorpos de membrana
+              reconhecendo antígenos nativos, e os <em>receptores de célula
+              T</em> (TCR), que reconhecem peptídeos apresentados por moléculas
+              MHC. A diversidade de BCR e TCR é gerada por recombinação
+              somática e permite que o sistema imune reconheça uma ampla gama de
+              antígenos【932704689189318†L600-L617】.
+            </p>
+            <!-- Flashcards -->
+            <div class="flashcards" data-topic="mod1_mol"></div>
+          </article>
+
+          <!-- Antígenos e Anticorpos -->
+          <article id="mod1_ag_ac">
+            <h3>Conceitos de Antígeno e Anticorpo</h3>
+            <p>
+              Um <strong>antígeno</strong> é qualquer molécula reconhecida como
+              não‑ própria que se liga especificamente a receptores imunes,
+              desencadeando resposta adaptativa【932704689189318†L360-L367】. Podem
+              ser proteínas, polissacarídeos ou pequenas moléculas (haptenos)
+              conjugadas a carreadores. Os linfócitos B respondem a antígenos
+              nativos via BCR; já os linfócitos T reconhecem peptídeos
+              processados apresentados por MHC. A especificidade dos receptores
+              determina a <strong>seleção clonal</strong>, em que células que
+              reconhecem um antígeno proliferam e se diferenciam【932704689189318†L618-L621】.
+            </p>
+            <p>
+              <strong>Anticorpos</strong> ou imunoglobulinas são moléculas
+              secretadas por plasmócitos derivados de linfócitos B ativados. Cada
+              anticorpo possui duas cadeias pesadas e duas leves formando
+              regiões variáveis (determinantes de especificidade) e constantes
+              (funções efetoras). As diferentes classes (IgM, IgG, IgA, IgE e
+              IgD) refletem funções como neutralização de toxinas, opsonização
+              para fagocitose e ativação de complemento.
+            </p>
+            <!-- Flashcards -->
+            <div class="flashcards" data-topic="mod1_ag_ac"></div>
+          </article>
+
+          <!-- Quiz do Módulo 1 -->
+          <div class="quiz" data-module="1">
+            <h4>Autoavaliação</h4>
+            <p>Selecione o nível de dificuldade e inicie o quiz.</p>
+            <select class="nivel" aria-label="Selecionar nível de dificuldade">
+              <option value="Basico">Básico</option>
+              <option value="Intermediario">Intermediário</option>
+              <option value="Avancado">Avançado</option>
+            </select>
+            <button class="start-quiz">Iniciar Quiz</button>
+            <div class="quiz-container"></div>
+          </div>
+        </section>
+
+        <!-- MÓDULO 2 -->
+        <section id="modulo2" class="modulo">
+          <h2>Módulo 2 – Imunidade Inata 🛡️</h2>
+
+          <!-- Barreiras físicas e químicas -->
+          <article id="mod2_bar">
+            <h3>Barreiras Físicas e Químicas</h3>
+            <p>
+              A primeira linha de defesa contra infecções compreende barreiras
+              físicas e químicas. A pele, com sua camada córnea e secreções
+              sebáceas, impede a entrada de microrganismos【932704689189318†L373-L383】.
+              Mucosas do trato respiratório e gastrointestinal secretam muco que
+              aprisiona partículas e contém enzimas como lisozima e
+              fosfolipase A2 que degradam paredes bacterianas【932704689189318†L386-L389】.
+              Secreções como lágrimas e urina removem agentes por lavagem, e o
+              ambiente ácido do estômago inibe o crescimento microbiano【932704689189318†L390-L394】.
+            </p>
+            <p>
+              Barreira química adicional é fornecida por <em>peptídeos
+              antimicrobianos</em>, como as β‑defensinas, produzidos por células
+              epiteliais e neutrófilos【932704689189318†L386-L389】. A microbiota
+              comensal da pele e mucosas compete com patógenos por nutrientes e
+              espaço, modulando o pH e a disponibilidade de ferro【932704689189318†L395-L399】.
+            </p>
+            <!-- Flashcards -->
+            <div class="flashcards" data-topic="mod2_bar"></div>
+          </article>
+
+          <!-- Sistema complemento -->
+          <article id="mod2_comp">
+            <h3>Sistema Complemento</h3>
+            <p>
+              O sistema complemento é uma cascata bioquímica composta por mais de
+              20 proteínas séricas que “complementam” a ação dos anticorpos,
+              atacando membranas de células estranhas e desencadeando
+              inflamação【932704689189318†L554-L573】. Sua ativação ocorre por três
+              vias principais: <strong>clássica</strong> (dependente de
+              anticorpos), <strong>lectina</strong> (ligação de lectinas a
+              carboidratos microbianos) e <strong>alternativa</strong>
+              (ativação espontânea na superfície de patógenos). A ativação
+              sequencial gera produtos como C3b, que opsoniza microrganismos,
+              fragmentos anafilotóxicos (C3a, C5a) que recrutam células e o
+              <em>complexo de ataque à membrana</em> (MAC), que promove lise
+              direta【932704689189318†L569-L573】.
+            </p>
+            <!-- Flashcards -->
+            <div class="flashcards" data-topic="mod2_comp"></div>
+          </article>
+
+          <!-- Fagócitos e inflamação -->
+          <article id="mod2_fag">
+            <h3>Fagócitos (Neutrófilos e Macrófagos) e Processo Inflamatório</h3>
+            <p>
+              Os <strong>neutrófilos</strong>, abundantes no sangue, migram
+              rapidamente para locais de infecção guiados por quimiocinas. Após
+              fagocitarem patógenos, fundem o fagossomo com lisossomos e
+              liberam enzimas e espécies reativas que degradam o invasor【932704689189318†L465-L473】. Os
+              <strong>macrófagos</strong> residem nos tecidos e atuam como
+              sentinelas, removendo células mortas e participando da
+              apresentação de antígenos【932704689189318†L484-L489】.
+            </p>
+            <p>
+              A <strong>inflamação</strong> é uma resposta inicial do organismo
+              caracterizada por rubor, calor, dor e edema. Lesões ou infecções
+              induzem a liberação de eicosanoides e citocinas pró‑inflamatórias
+              (por exemplo prostaglandinas e interleucinas) que aumentam a
+              permeabilidade vascular e recrutam leucócitos para o local
+              afetado【932704689189318†L531-L538】. A eliminação do agente leva
+              à resolução com liberação de mediadores anti‑inflamatórios.
+            </p>
+            <!-- Figura fagocitose -->
+            <figure class="image">
+              <img src="fagocitose.png" alt="Diagrama simplificado do processo de fagocitose" />
+              <figcaption>
+                Esquema em três etapas da fagocitose: reconhecimento do alvo por
+                receptores na membrana do fagócito, invaginação e formação do
+                fagossomo e posterior fusão com lisossomos para digestão.
+              </figcaption>
+            </figure>
+            <!-- Flashcards -->
+            <div class="flashcards" data-topic="mod2_fag"></div>
+          </article>
+
+          <!-- Células dendríticas e NK -->
+          <article id="mod2_dc_nk">
+            <h3>Células Dendríticas e Células NK</h3>
+            <p>
+              <strong>Células dendríticas</strong> são fagócitos especializados
+              localizados em tecidos expostos (pele, mucosa respiratória e
+              gastrointestinal). Após capturar antígenos, migram para linfonodos
+              onde maturam e apresentam peptídeos via MHC II a linfócitos T
+              auxiliares, iniciando a resposta adaptativa【932704689189318†L491-L499】.
+            </p>
+            <p>
+              As <strong>células NK</strong> são linfócitos inatos que reconhecem
+              células infectadas ou tumorais por meio da detecção de baixos
+              níveis de MHC I (“sinal de ausência”) e de moléculas de estresse
+              na superfície. Quando ativadas, liberam perforinas e granzimas que
+              induzem apoptose no alvo【932704689189318†L514-L523】.
+            </p>
+            <!-- Flashcards -->
+            <div class="flashcards" data-topic="mod2_dc_nk"></div>
+          </article>
+
+          <!-- Quiz do Módulo 2 -->
+          <div class="quiz" data-module="2">
+            <h4>Autoavaliação</h4>
+            <p>Selecione o nível de dificuldade e inicie o quiz.</p>
+            <select class="nivel" aria-label="Selecionar nível de dificuldade">
+              <option value="Basico">Básico</option>
+              <option value="Intermediario">Intermediário</option>
+              <option value="Avancado">Avançado</option>
+            </select>
+            <button class="start-quiz">Iniciar Quiz</button>
+            <div class="quiz-container"></div>
+          </div>
+        </section>
+
+        <!-- MÓDULO 3 -->
+        <section id="modulo3" class="modulo">
+          <h2>Módulo 3 – Imunidade Adaptativa 🎯</h2>
+
+          <!-- MHC e apresentação de antígenos -->
+          <article id="mod3_mhc">
+            <h3>Apresentação de Antígenos e o Complexo Principal de Histocompatibilidade</h3>
+            <p>
+              A <strong>imunidade adaptativa</strong> evoluiu nos vertebrados
+              para gerar respostas específicas e memória imunológica. Linfócitos
+              reconhecem antígenos somente quando peptídeos são exibidos por
+              moléculas do <em>complexo principal de histocompatibilidade</em>
+              (MHC). Moléculas MHC I estão presentes na maioria das células
+              nucleadas e apresentam peptídeos endógenos a linfócitos CD8+,
+              induzindo respostas citotóxicas; moléculas MHC II ocorrem em
+              células apresentadoras de antígeno e apresentam peptídeos
+              extracelulares a linfócitos CD4+, desencadeando respostas
+              auxiliares【932704689189318†L600-L609】.
+            </p>
+            <p>
+              O processo de apresentação de antígenos envolve degradação
+              proteica, transporte de peptídeos para o retículo endoplasmático e
+              carregamento no MHC. Esse complexo é reconhecido pelo TCR em
+              linfócitos T, juntamente com co‑receptores (CD8 ou CD4) que
+              estabilizam a interação【932704689189318†L647-L679】.
+            </p>
+            <!-- Diagrama MHC -->
+            <figure class="image">
+              <img src="diagrama_mhc.png" alt="Esquema de apresentação de antígeno para linfócitos T" />
+              <figcaption>
+                Esquema mostrando a apresentação de antígeno por MHC II a linfócitos
+                CD4+ (esquerda) e por MHC I a linfócitos CD8+ (direita). A
+                interação com o TCR e co‑receptores leva à ativação e à liberação
+                de citocinas ou citotoxinas.
+              </figcaption>
+            </figure>
+            <!-- Flashcards -->
+            <div class="flashcards" data-topic="mod3_mhc"></div>
+          </article>
+
+          <!-- Linfócitos T -->
+          <article id="mod3_t">
+            <h3>Linfócitos T: Ativação, Diferenciação e Função</h3>
+            <p>
+              Há três principais subtipos de linfócitos T: <strong>citotóxicos
+              (CD8+)</strong>, <strong>auxiliares (CD4+)</strong> e
+              <strong>reguladores</strong>. Linfócitos CD8+ reconhecem peptídeos
+              apresentados por MHC I e, quando ativados, liberam perforina e
+              granzimas que induzem apoptose em células infectadas ou tumorais【932704689189318†L647-L659】.
+              Linfócitos CD4+ reconhecem antígenos em MHC II e secretam
+              citocinas que dirigem respostas imunes; subpopulações incluem
+              Th1 (estimula macrófagos e imunidade celular), Th2 (favorece
+              produção de anticorpos por linfócitos B), Th17 (recruta neutrófilos
+              via IL‑17) e Treg (mantêm tolerância periférica e suprimem
+              autoimunidade). A ativação de linfócitos T requer sinais de
+              co‑estimulação e persistência de interação com o APC【932704689189318†L670-L691】.
+            </p>
+            <!-- Flashcards -->
+            <div class="flashcards" data-topic="mod3_t"></div>
+          </article>
+
+          <!-- Linfócitos B -->
+          <article id="mod3_b">
+            <h3>Linfócitos B: Ativação, Anticorpos e Memória</h3>
+            <p>
+              Linfócitos B originam‑se na medula óssea e expressam BCR
+              específicos. Quando encontram antígeno e recebem ajuda de linfócitos
+              CD4+ via CD40L e citocinas, os linfócitos B proliferam e se
+              diferenciam em <em>plasmócitos</em>, que secretam anticorpos, e
+              em <em>células de memória</em>, que conferem proteção duradoura.
+              A mudança de classe (switch) de IgM para IgG, IgA ou IgE é guiada
+              por citocinas e resulta em diferentes funções efetoras. A memória
+              imunológica permite resposta mais rápida e potente a exposições
+              subsequentes【932704689189318†L585-L594】.
+            </p>
+            <!-- Flashcards -->
+            <div class="flashcards" data-topic="mod3_b"></div>
+          </article>
+
+          <!-- Tolerância imunológica -->
+          <article id="mod3_tol">
+            <h3>Tolerância Imunológica</h3>
+            <p>
+              Para prevenir danos a tecidos próprios, o sistema imune possui
+              mecanismos de <strong>tolerância</strong>. No timo e na medula
+              óssea (tolerância central), linfócitos que reconhecem fortemente
+              antígenos próprios são eliminados ou redirecionados para a via
+              reguladora. Na periferia, mecanismos como anergia, supressão por
+              Treg e deleção clonal evitam a ativação de linfócitos auto‑reativos.
+              Falhas nesses processos podem resultar em autoimunidade【932704689189318†L320-L329】.
+            </p>
+            <!-- Flashcards -->
+            <div class="flashcards" data-topic="mod3_tol"></div>
+          </article>
+
+          <!-- Quiz do Módulo 3 -->
+          <div class="quiz" data-module="3">
+            <h4>Autoavaliação</h4>
+            <p>Selecione o nível de dificuldade e inicie o quiz.</p>
+            <select class="nivel" aria-label="Selecionar nível de dificuldade">
+              <option value="Basico">Básico</option>
+              <option value="Intermediario">Intermediário</option>
+              <option value="Avancado">Avançado</option>
+            </select>
+            <button class="start-quiz">Iniciar Quiz</button>
+            <div class="quiz-container"></div>
+          </div>
+        </section>
+
+        <!-- MÓDULO 4 -->
+        <section id="modulo4" class="modulo">
+          <h2>Módulo 4 – Imunologia Clínica Aplicada ⚕️</h2>
+
+          <!-- Imunologia das infecções -->
+          <article id="mod4_inf">
+            <h3>Imunologia das Infecções (Viral, Bacteriana, Fúngica, Parasitária)</h3>
+            <p>
+              A natureza do patógeno influencia a resposta imune. Infecções
+              <strong>virais</strong> induzem produção de interferons e ativação
+              de linfócitos NK e CD8+; uma resposta ineficaz permite que vírus
+              persistam em células hospedeiras. Infecções <strong>bacterianas</strong>
+              desencadeiam ativação de complemento, fagocitose e formação de
+              anticorpos opsonizantes. Patógenos <strong>fúngicos</strong> são
+              combatidos por neutrófilos e linfócitos Th17 que promovem
+              inflamação, enquanto infecções <strong>parasitárias</strong> (ex. helmintos)
+              geram respostas Th2 e produção de IgE para ativar eosinófilos e
+              mastócitos.
+            </p>
+            <p>
+              O Nordeste brasileiro apresenta elevada incidência de doenças
+              arbovirais. Em 2024, o Brasil concentrou mais de 80 % do total de
+              casos de dengue reportados no mundo【573161855440271†L240-L244】. Na
+              cidade de Niterói, por exemplo, a introdução de mosquitos com
+              <em>Wolbachia</em> reduziu a taxa média anual de dengue de 913 para
+              84 casos por 100 000 habitantes【573161855440271†L315-L317】. O
+              vírus Zika emergiu no Brasil entre 2015‑2016, infectando cerca de
+              1,5 milhão de pessoas e associando‑se a mais de 3 500 casos de
+              microcefalia em recém‑nascidos【213131673389270†L163-L170】. Surto de
+              chikungunya em 2023 resultou em mais de 180 000 casos no país【639840460018754†L705-L710】,
+              e a leishmaniose tegumentar permanece endêmica, com 34 954 novos
+              casos nas Américas em 2023, sendo o Brasil responsável por grande
+              parcela【854231888232500†L129-L138】. Essas doenças ilustram como
+              fatores climáticos e socioeconômicos regionais condicionam o
+              perfil epidemiológico e a importância de estratégias de controle
+              vetorial e vacinação.
+            </p>
+            <!-- Flashcards -->
+            <div class="flashcards" data-topic="mod4_inf"></div>
+          </article>
+
+          <!-- Hipersensibilidades -->
+          <article id="mod4_hip">
+            <h3>Hipersensibilidades</h3>
+            <p>
+              Reações de <strong>hipersensibilidade</strong> ocorrem quando a
+              resposta imune causa dano tecidual. São classificadas em quatro
+              tipos. A <strong>Tipo I</strong> é imediata ou anafilática, mediada
+              por IgE e degranulação de mastócitos e basófilos; manifestações
+              variam de urticária à anafilaxia【932704689189318†L981-L987】.
+              A <strong>Tipo II</strong> envolve anticorpos IgG ou IgM contra
+              antígenos da própria célula, levando à citotoxicidade mediada por
+              complemento【932704689189318†L988-L992】. A <strong>Tipo III</strong>
+              decorre do depósito de imunocomplexos em tecidos, ativando
+              inflamação【932704689189318†L991-L993】. A <strong>Tipo IV</strong> é
+              mediada por linfócitos T e ocorre de 48 a 72 h após exposição,
+              exemplificada pela dermatite de contato【932704689189318†L993-L997】.
+            </p>
+            <!-- Flashcards -->
+            <div class="flashcards" data-topic="mod4_hip"></div>
+          </article>
+
+          <!-- Autoimunidade -->
+          <article id="mod4_auto">
+            <h3>Autoimunidade e Doenças Autoimunes</h3>
+            <p>
+              A <strong>autoimunidade</strong> surge quando o sistema imune perde
+              a capacidade de distinguir o próprio do não‑próprio. Mutações
+              genéticas, infecções e fatores ambientais podem romper a
+              tolerância, levando a produção de autoanticorpos e linfócitos
+              auto‑reativos. Doenças comuns incluem tireoidite de Hashimoto,
+              artrite reumatoide, diabetes mellitus tipo 1 e lúpus
+              eritematoso sistêmico【932704689189318†L320-L329】.
+            </p>
+            <!-- Flashcards -->
+            <div class="flashcards" data-topic="mod4_auto"></div>
+          </article>
+
+          <!-- Imunodeficiências -->
+          <article id="mod4_def">
+            <h3>Imunodeficiências</h3>
+            <p>
+              <strong>Imunodeficiências primárias</strong> são distúrbios
+              genéticos que resultam em deficiência de componentes imunes, como a
+              imunodeficiência combinada severa (SCID), caracterizada por
+              ausência funcional de linfócitos T e B【932704689189318†L320-L326】.
+              <strong>Imunodeficiências secundárias</strong> são adquiridas,
+              resultantes de infecções (HIV/AIDS), desnutrição, envelhecimento
+              ou uso de drogas imunossupressoras. Essas condições predispõem a
+              infecções oportunistas e tumores.
+            </p>
+            <!-- Flashcards -->
+            <div class="flashcards" data-topic="mod4_def"></div>
+          </article>
+
+          <!-- Transplantes e tumores -->
+          <article id="mod4_trans">
+            <h3>Imunologia de Transplantes e Tumoral</h3>
+            <p>
+              Em transplantes de órgãos, diferenças nos antígenos MHC entre
+              doador e receptor levam ao reconhecimento do enxerto como estranho.
+              A rejeição hiperaguda ocorre quando existem anticorpos pré‑formados
+              contra antígenos do doador; a rejeição aguda envolve ativação de
+              linfócitos T que atacam células do enxerto. Imunossupressores,
+              como glucocorticoides e ciclosporina, são usados para prevenir
+              rejeição, mas aumentam o risco de infecções【932704689189318†L1033-L1053】.
+            </p>
+            <p>
+              O sistema imune também reconhece e elimina células tumorais,
+              processo denominado vigilância imunológica. Células transformadas
+              apresentam antígenos tumorais e são alvo de linfócitos NK e
+              linfócitos T citotóxicos【932704689189318†L1101-L1104】. Tumores podem
+              escapar por perda de MHC I ou secreção de fatores imunossupressores.
+            </p>
+            <!-- Flashcards -->
+            <div class="flashcards" data-topic="mod4_trans"></div>
+          </article>
+
+          <!-- Vacinação -->
+          <article id="mod4_vac">
+            <h3>Imunizações (Vacinas)</h3>
+            <p>
+              As vacinas estimulam a imunidade adaptativa ao introduzir antígenos
+              imunogênicos sem causar doença. A imunização ativa induz
+              linfócitos B e T memória, proporcionando proteção duradoura【932704689189318†L1076-L1086】.
+              Vacinas podem ser de agentes atenuados, inativados, subunidades
+              proteicas ou toxoides. Como antígenos derivados de vacinas
+              acelulares não ativam fortemente a imunidade inata, adjuvantes são
+              adicionados para melhorar a apresentação antigênica【932704689189318†L1088-L1093】.
+            </p>
+            <!-- Flashcards -->
+            <div class="flashcards" data-topic="mod4_vac"></div>
+          </article>
+
+          <!-- Quiz do Módulo 4 -->
+          <div class="quiz" data-module="4">
+            <h4>Autoavaliação</h4>
+            <p>Selecione o nível de dificuldade e inicie o quiz.</p>
+            <select class="nivel" aria-label="Selecionar nível de dificuldade">
+              <option value="Basico">Básico</option>
+              <option value="Intermediario">Intermediário</option>
+              <option value="Avancado">Avançado</option>
+            </select>
+            <button class="start-quiz">Iniciar Quiz</button>
+            <div class="quiz-container"></div>
+          </div>
+        </section>
+
+        <!-- Seção para gerar prova simulada -->
+        <section id="simulado" class="simulado-section">
+          <h2>Gerar Prova Simulada 📝</h2>
+          <p>
+            Selecione os módulos desejados e gere uma prova com 10 questões
+            aleatórias.
+          </p>
+          <button id="btn-open-modal">Gerar Prova</button>
+          <!-- Contêiner onde a prova será exibida -->
+          <div id="simulado-container"></div>
+        </section>
+      </main>
+    </div>
+
+    <!-- Modal de seleção de módulos para o simulado -->
+    <div id="modal-simulado" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-content">
+        <h3 id="modal-title">Selecione os módulos</h3>
+        <form id="form-simulado">
+          <label><input type="checkbox" name="modulo" value="1" /> Módulo 1</label><br />
+          <label><input type="checkbox" name="modulo" value="2" /> Módulo 2</label><br />
+          <label><input type="checkbox" name="modulo" value="3" /> Módulo 3</label><br />
+          <label><input type="checkbox" name="modulo" value="4" /> Módulo 4</label><br />
+          <button type="submit">Gerar Prova</button>
+          <button type="button" id="fechar-modal">Cancelar</button>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2025 – Plataforma Imunologia Interativa. Desenvolvido para fins educacionais.</p>
+    </footer>
+  </body>
+</html>

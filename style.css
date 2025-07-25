@@ -1,0 +1,376 @@
+/*
+ * Folha de estilos para a plataforma Imunologia Interativa.
+ *
+ * Esta folha define a paleta de cores, disposição das regiões (menu
+ * lateral, conteúdo e rodapé) e estilos de elementos interativos
+ * como botões, flashcards, quizzes e modais. O objetivo é
+ * proporcionar uma experiência clara e acessível, com destaque
+ * visual adequado às seções importantes e navegação amigável.
+ */
+
+/* Paleta de cores definida no enunciado */
+:root {
+  --color-background: #ffffff;
+  --color-primary: #0057b8;   /* azul profundo para títulos e links */
+  --color-success: #28a745;   /* verde para acentuar elementos positivos */
+  --color-warning: #ffd700;   /* amarelo para chamar a atenção */
+  --color-text: #333333;      /* cor básica de texto para legibilidade */
+  --color-muted: #666666;     /* tom para legendas e detalhes */
+  --sidebar-width: 260px;
+}
+
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5 {
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover, a:focus {
+  text-decoration: underline;
+}
+
+/* Aviso educacional no topo */
+.aviso {
+  background-color: var(--color-warning);
+  color: #000;
+  padding: 0.6rem 1rem;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 3px solid var(--color-primary);
+}
+
+/* Layout principal: menu fixo e conteúdo */
+.container {
+  display: flex;
+  min-height: calc(100vh - 3rem);
+}
+
+/* Menu lateral */
+.sidebar {
+  width: var(--sidebar-width);
+  flex-shrink: 0;
+  background-color: #f5f7fa;
+  border-right: 1px solid #e0e0e0;
+  padding: 1rem;
+  overflow-y: auto;
+  position: sticky;
+  top: 0;
+  height: calc(100vh - 3rem);
+}
+
+.sidebar h1 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sidebar li {
+  margin-bottom: 0.5rem;
+}
+
+.sidebar li ul {
+  margin-top: 0.3rem;
+  margin-left: 1rem;
+}
+
+.sidebar a {
+  display: block;
+  padding: 0.3rem 0;
+  color: var(--color-primary);
+}
+
+.sidebar a:hover {
+  color: var(--color-success);
+}
+
+/* Conteúdo principal */
+.content {
+  flex: 1;
+  padding: 1.5rem;
+  overflow-y: auto;
+}
+
+.modulo {
+  margin-bottom: 2.5rem;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 2rem;
+}
+
+.modulo:last-of-type {
+  border-bottom: none;
+}
+
+/* Figuras com legendas detalhadas */
+.image {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.image figcaption {
+  font-size: 0.9rem;
+  color: var(--color-muted);
+  margin-top: 0.5rem;
+  text-align: justify;
+}
+
+/* Flashcards */
+.flashcards {
+  margin: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.flashcard {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 260px;
+  min-height: 150px;
+  padding: 1rem;
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+.flashcard:hover {
+  transform: translateY(-4px);
+}
+
+.flashcard .front,
+.flashcard .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.flashcard .back {
+  transform: rotateY(180deg);
+}
+
+.flashcard.flipped .front {
+  transform: rotateY(180deg);
+}
+
+.flashcard.flipped .back {
+  transform: rotateY(0);
+}
+
+/* Quiz container */
+.quiz {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 4px;
+  background-color: #fafafa;
+}
+
+.quiz h4 {
+  margin-bottom: 0.5rem;
+}
+
+.quiz .nivel {
+  margin-right: 0.5rem;
+  padding: 0.3rem;
+}
+
+.quiz button.start-quiz {
+  background-color: var(--color-primary);
+  color: #fff;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 0.4rem;
+}
+
+.quiz button.start-quiz:hover {
+  background-color: var(--color-success);
+}
+
+.quiz-container {
+  margin-top: 1rem;
+}
+
+.question {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.question:last-of-type {
+  border-bottom: none;
+}
+
+.question p {
+  margin-bottom: 0.5rem;
+}
+
+.options label {
+  display: block;
+  padding: 0.3rem 0;
+}
+
+.options input[type="radio"] {
+  margin-right: 0.4rem;
+}
+
+.quiz-result {
+  margin-top: 1rem;
+  padding: 0.8rem;
+  background-color: #e8f5e9;
+  border-left: 4px solid var(--color-success);
+  color: #256029;
+  border-radius: 4px;
+  display: none;
+}
+
+/* Simulado */
+.simulado-section {
+  margin-top: 2rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+button#btn-open-modal {
+  background-color: var(--color-primary);
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button#btn-open-modal:hover {
+  background-color: var(--color-success);
+}
+
+/* Modal estilo */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 6px;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h3 {
+  margin-bottom: 1rem;
+  color: var(--color-primary);
+}
+
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.modal-content button[type="submit"],
+.modal-content button#fechar-modal {
+  background-color: var(--color-primary);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.modal-content button[type="submit"]:hover,
+.modal-content button#fechar-modal:hover {
+  background-color: var(--color-success);
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 0.8rem;
+  background-color: #f5f7fa;
+  border-top: 1px solid #e0e0e0;
+  color: var(--color-muted);
+  font-size: 0.85rem;
+}
+
+/* Responsividade básica */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  .content {
+    padding: 1rem;
+  }
+  .flashcard {
+    width: calc(100% - 2rem);
+  }
+}
